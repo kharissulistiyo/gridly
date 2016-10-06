@@ -10,6 +10,9 @@
   background: #f7f7f7;
 }
 
+.sidebar-inner{
+  padding: 0 15px 30px 15px;
+}
 
 /*--------------------------------------------------------------
 ## Main content
@@ -46,6 +49,32 @@
   margin-right: auto;
 }
 
+.single .content-area{
+  background-color: rgba(74, 74, 74, 0.075);
+}
+
+.single .hentry{
+  background: #fff;
+}
+
+.single .entry-header{
+  text-align: center;
+}
+
+.single .post-navigation{
+  border-bottom: 1px solid rgba(74, 74, 74, 0.3);
+}
+
+// Comments
+.comments-area{
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ol.comment-list{
+  margin: 0;
+}
 
 /*--------------------------------------------------------------
 ## Footer
@@ -56,6 +85,22 @@
   text-align: center;
 }
 
+/*--------------------------------------------------------------
+## Misc
+--------------------------------------------------------------*/
+
+.entry-title{
+  margin-top: 0;
+}
+
+/*--------------------------------------------------------------
+## Misc
+--------------------------------------------------------------*/
+
+html,
+body{
+  overflow-x: hidden;
+}
 
 .site-main{
   &:before,

@@ -300,7 +300,7 @@ hr {
   margin-bottom: 1.5em; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 1.5em 0; }
 
 ul {
   list-style: disc; }
@@ -711,6 +711,9 @@ object {
   left: 0;
   background: #f7f7f7; }
 
+.sidebar-inner {
+  padding: 0 15px 30px 15px; }
+
 /*--------------------------------------------------------------
 ## Main content
 --------------------------------------------------------------*/
@@ -738,12 +741,45 @@ object {
   margin-left: auto;
   margin-right: auto; }
 
+.single .content-area {
+  background-color: rgba(74, 74, 74, 0.075); }
+
+.single .hentry {
+  background: #fff; }
+
+.single .entry-header {
+  text-align: center; }
+
+.single .post-navigation {
+  border-bottom: 1px solid rgba(74, 74, 74, 0.3); }
+
+.comments-area {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
+
+ol.comment-list {
+  margin: 0; }
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
 #colophon {
   margin-left: 300px;
   text-align: center; }
+
+/*--------------------------------------------------------------
+## Misc
+--------------------------------------------------------------*/
+.entry-title {
+  margin-top: 0; }
+
+/*--------------------------------------------------------------
+## Misc
+--------------------------------------------------------------*/
+html,
+body {
+  overflow-x: hidden; }
 
 .site-main:before, .site-main:after {
   content: '';

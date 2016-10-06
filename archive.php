@@ -23,6 +23,7 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php
+			echo '<div class="masonry-container">';
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
@@ -35,6 +36,8 @@ get_header(); ?>
 
 			endwhile;
 
+			echo '</div><!-- /.masonry-container -->';
+			
 			the_posts_navigation();
 
 		else :

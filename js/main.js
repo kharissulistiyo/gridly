@@ -4,7 +4,7 @@
 
 ( function( $ ) {
 
-  $('.site-main').masonry({
+  $('.masonry-container').masonry({
     itemSelector: '.grid-layout'
   });
 
