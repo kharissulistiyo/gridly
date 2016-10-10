@@ -102,6 +102,10 @@ add_action( 'widgets_init', 'gridly_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gridly_scripts() {
+	wp_enqueue_style( 'gridly-gfont', 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i' );
+	
+	wp_enqueue_style( 'gridly-fa', get_template_directory_uri() . '/css/font-awesome.min.css' );
+
 	wp_enqueue_style( 'gridly-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'gridly-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
