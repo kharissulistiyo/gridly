@@ -68,12 +68,12 @@ class Gridly_Nav_Walker extends Walker_Nav_Menu {
         $item_output = $args->before;
         $item_output .= '<a'. $attributes .'>';
         $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+        $item_output .= '</a>';
 
         if ( 'primary' == $args->theme_location ) {
             $submenus = 0 == $depth || 1 == $depth ? get_posts( array( 'post_type' => 'nav_menu_item', 'numberposts' => 1, 'meta_query' => array( array( 'key' => '_menu_item_menu_item_parent', 'value' => $item->ID, 'fields' => 'ids' ) ) ) ) : false;
-            $item_output .= ! empty( $submenus ) ? ( 0 == $depth ? '<span class="subnav-toggle"></span>' : '<span class="sub-arrow"></span>' ) : '';
+            $item_output .= ! empty( $submenus ) ? ( 0 == $depth ? '<span class="subnav-toggle"></span>' : '<span class="subnav-toggle"></span>' ) : '';
         }
-        $item_output .= '</a>';
         $item_output .= $args->after;
 
         $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
