@@ -22,3 +22,19 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// transform
+@mixin transform($param) {
+	-webkit-transform: $param;
+    -ms-transform: $param;
+    -o-transform: $param;
+    transform: $param;
+}
+
+// transform
+@mixin transition($param) {
+	-webkit-transition: $param;
+    -ms-transition: $param;
+    -o-transition: $param;
+    transition: $param;
+}
